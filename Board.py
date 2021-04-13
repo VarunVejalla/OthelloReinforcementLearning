@@ -1,6 +1,19 @@
 leftShifts = [0, 0, 0, 0, 1, 9, 8, 7]
 rightShifts = [1, 9, 8, 7, 0, 0, 0, 0]
 
+maxSize = 0xffffffffffffffff#2^64-1
+
+oneShift = [1<<i for i in range(65)]
+
+masks = [0x7f7f7f7f7f7f7f7f, #right
+         0x7f7f7f7f7f7f7f, #down-right
+         0xffffffffffffffff, #down
+         0xfefefefefefefe, #down-left
+         0xfefefefefefefefe, #left
+         0xfefefefefefefe00, #up-left
+         0xffffffffffffffff, #up
+         0x7f7f7f7f7f7f7f00] #up-right
+
 class Board():
     #0 is at topleft corner
     #63 is at bottom right corner

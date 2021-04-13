@@ -1,3 +1,3 @@
 # OthelloReinforcementLearning
 
-This is our stuff
+This is our stuff. big chungus

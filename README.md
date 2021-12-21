@@ -1,3 +1,3 @@
 # OthelloReinforcementLearning
 
-In this project, we created a Othello player that was trained using reinforcement learning.
+In this project, we created an Othello player that was trained using reinforcement learning.
